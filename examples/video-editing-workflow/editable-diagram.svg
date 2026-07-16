@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1660" height="1240" viewBox="0 0 1660 1240">
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="9" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0 0 L10 4 L0 8 z" fill="#7D8782"/>
+    </marker>
+  </defs>
+
+  <rect id="canvas" x="0" y="0" width="1660" height="1240" fill="#FAFBFA"/>
+  <text id="title" x="80" y="76" fill="#17202A" font-size="36" font-weight="800">视频剪辑工作流</text>
+  <text id="subtitle" x="80" y="112" fill="#6F7885" font-size="18">从素材整理到多规格成片的可编辑流程图</text>
+
+  <text id="col-merchant" x="185" y="158" fill="#6F7885" font-size="18" font-weight="700" text-anchor="middle">输入 / 角色</text>
+  <text id="col-package" x="770" y="158" fill="#6F7885" font-size="18" font-weight="700" text-anchor="middle">素材 / 剪辑任务</text>
+  <text id="col-channel" x="1390" y="158" fill="#6F7885" font-size="18" font-weight="700" text-anchor="middle">归档 / 输出</text>
+
+  <rect id="group-self-selected" x="60" y="180" width="1540" height="430" rx="22" fill="#FFFFFF" stroke="#DCE3DF" stroke-width="2"/>
+  <rect id="tag-self-selected" x="92" y="202" width="180" height="44" rx="12" fill="#DDEFE9"/>
+  <text id="text-self-selected" x="182" y="231" fill="#1F7A5C" font-size="22" font-weight="800" text-anchor="middle">素材整理</text>
+
+  <rect id="merchant-a-top" x="100" y="337" width="210" height="92" rx="18" fill="#F3F8F6" stroke="#1F7A5C" stroke-width="2"/>
+  <circle id="merchant-a-top-badge" cx="145" cy="383" r="23" fill="#1F7A5C"/>
+  <text id="merchant-a-top-badge-text" x="145" y="391" fill="#FFFFFF" font-size="20" font-weight="800" text-anchor="middle">拍</text>
+  <text id="merchant-a-top-text" x="182" y="391" fill="#17202A" font-size="22" font-weight="700">拍摄素材</text>
+
+  <polyline id="edge-merchant-resource-a" points="310,383 360,383 360,286 455,286" fill="none" stroke="#7D8782" stroke-width="2" marker-end="url(#arrow)"/>
+  <line id="edge-merchant-resource-b" x1="310" y1="383" x2="455" y2="383" stroke="#7D8782" stroke-width="2" marker-end="url(#arrow)"/>
+  <polyline id="edge-merchant-resource-c" points="310,383 360,383 360,480 455,480" fill="none" stroke="#7D8782" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <rect id="resource-a" x="455" y="250" width="650" height="72" rx="14" fill="#F1F8F5" stroke="#BBD9CD" stroke-width="2"/>
+  <rect id="resource-a-accent" x="455" y="250" width="10" height="72" rx="5" fill="#1F7A5C"/>
+  <text id="resource-a-title" x="495" y="281" fill="#1F7A5C" font-size="21" font-weight="800">主镜头</text>
+  <text id="resource-a-detail" x="645" y="281" fill="#56615C" font-size="19">采访、人物</text>
+
+  <rect id="resource-b" x="455" y="347" width="650" height="72" rx="14" fill="#F1F8F5" stroke="#BBD9CD" stroke-width="2"/>
+  <rect id="resource-b-accent" x="455" y="347" width="10" height="72" rx="5" fill="#1F7A5C"/>
+  <text id="resource-b-title" x="495" y="378" fill="#1F7A5C" font-size="21" font-weight="800">补充镜头</text>
+  <text id="resource-b-detail" x="645" y="378" fill="#56615C" font-size="19">空镜、细节</text>
+
+  <rect id="resource-c" x="455" y="444" width="650" height="72" rx="14" fill="#F1F8F5" stroke="#BBD9CD" stroke-width="2"/>
+  <rect id="resource-c-accent" x="455" y="444" width="10" height="72" rx="5" fill="#1F7A5C"/>
+  <text id="resource-c-title" x="495" y="475" fill="#1F7A5C" font-size="21" font-weight="800">音频</text>
+  <text id="resource-c-detail" x="645" y="475" fill="#56615C" font-size="19">旁白、音乐</text>
+
+  <line id="edge-resource-a-channel-a" x1="1105" y1="286" x2="1280" y2="286" stroke="#7D8782" stroke-width="2" marker-end="url(#arrow)"/>
+  <line id="edge-resource-b-channel-b" x1="1105" y1="383" x2="1280" y2="383" stroke="#7D8782" stroke-width="2" marker-end="url(#arrow)"/>
+  <line id="edge-resource-c-channel-c" x1="1105" y1="480" x2="1280" y2="480" stroke="#7D8782" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <circle id="channel-a-top-icon" cx="1320" cy="286" r="30" fill="#E8F5EF" stroke="#1F7A5C" stroke-width="2"/>
+  <text id="channel-a-top-code" x="1320" y="294" fill="#1F7A5C" font-size="20" font-weight="800" text-anchor="middle">A</text>
+  <text id="channel-a-top-text" x="1370" y="294" fill="#17202A" font-size="22" font-weight="700">素材箱 A</text>
+  <circle id="channel-b-top-icon" cx="1320" cy="383" r="30" fill="#EDF5FB" stroke="#3D8FD1" stroke-width="2"/>
+  <text id="channel-b-top-code" x="1320" y="391" fill="#3D8FD1" font-size="20" font-weight="800" text-anchor="middle">B</text>
+  <text id="channel-b-top-text" x="1370" y="391" fill="#17202A" font-size="22" font-weight="700">素材箱 B</text>
+  <circle id="channel-c-top-icon" cx="1320" cy="480" r="30" fill="#F3F0FB" stroke="#7654C6" stroke-width="2"/>
+  <text id="channel-c-top-code" x="1320" y="488" fill="#7654C6" font-size="20" font-weight="800" text-anchor="middle">C</text>
+  <text id="channel-c-top-text" x="1370" y="488" fill="#17202A" font-size="22" font-weight="700">素材箱 C</text>
+
+  <rect id="group-standard" x="60" y="640" width="1540" height="550" rx="22" fill="#FFFFFF" stroke="#DCE3DF" stroke-width="2"/>
+  <rect id="tag-standard" x="92" y="662" width="138" height="44" rx="12" fill="#EAF1FB"/>
+  <text id="text-standard" x="161" y="691" fill="#2F70B7" font-size="22" font-weight="800" text-anchor="middle">剪辑制作</text>
+
+  <rect id="merchant-a-bottom" x="100" y="808" width="210" height="92" rx="18" fill="#F5F8FC" stroke="#3D8FD1" stroke-width="2"/>
+  <circle id="merchant-a-bottom-badge" cx="145" cy="854" r="23" fill="#3D8FD1"/>
+  <text id="merchant-a-bottom-badge-text" x="145" y="862" fill="#FFFFFF" font-size="20" font-weight="800" text-anchor="middle">剪</text>
+  <text id="merchant-a-bottom-text" x="182" y="862" fill="#17202A" font-size="22" font-weight="700">剪辑师 A</text>
+
+  <rect id="merchant-b-bottom" x="100" y="1030" width="210" height="92" rx="18" fill="#F7F5FC" stroke="#7654C6" stroke-width="2"/>
+  <circle id="merchant-b-bottom-badge" cx="145" cy="1076" r="23" fill="#7654C6"/>
+  <text id="merchant-b-bottom-badge-text" x="145" y="1084" fill="#FFFFFF" font-size="20" font-weight="800" text-anchor="middle">剪</text>
+  <text id="merchant-b-bottom-text" x="182" y="1084" fill="#17202A" font-size="22" font-weight="700">剪辑师 B</text>
+
+  <polyline id="edge-merchant-a-click" points="310,854 360,854 360,774 440,774" fill="none" stroke="#7D8782" stroke-width="2" marker-end="url(#arrow)"/>
+  <polyline id="edge-merchant-a-fixed" points="310,854 360,854 360,930 440,930" fill="none" stroke="#7D8782" stroke-width="2" marker-end="url(#arrow)"/>
+  <line id="edge-merchant-b-click" x1="310" y1="1076" x2="440" y2="1076" stroke="#7D8782" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <rect id="click-package-a" x="440" y="730" width="390" height="88" rx="16" fill="#F5F8FC" stroke="#9FC3E6" stroke-width="2"/>
+  <rect id="click-package-a-accent" x="440" y="730" width="10" height="88" rx="5" fill="#3D8FD1"/>
+  <text id="click-package-a-title" x="480" y="766" fill="#2F70B7" font-size="22" font-weight="800">粗剪</text>
+  <text id="click-package-a-detail" x="590" y="766" fill="#56615C" font-size="19">结构、节奏</text>
+
+  <rect id="fixed-package-a" x="440" y="886" width="390" height="88" rx="16" fill="#F7F5FC" stroke="#B7A7E5" stroke-width="2"/>
+  <rect id="fixed-package-a-accent" x="440" y="886" width="10" height="88" rx="5" fill="#7654C6"/>
+  <text id="fixed-package-a-title" x="480" y="939" fill="#7654C6" font-size="22" font-weight="800">精剪</text>
+  <text id="fixed-package-a-detail" x="590" y="939" fill="#56615C" font-size="19">镜头、转场</text>
+
+  <rect id="click-package-b" x="440" y="1032" width="390" height="88" rx="16" fill="#F5F8FC" stroke="#9FC3E6" stroke-width="2"/>
+  <rect id="click-package-b-accent" x="440" y="1032" width="10" height="88" rx="5" fill="#3D8FD1"/>
+  <text id="click-package-b-title" x="480" y="1085" fill="#2F70B7" font-size="22" font-weight="800">调色</text>
+  <text id="click-package-b-detail" x="590" y="1085" fill="#56615C" font-size="19">曝光、色彩</text>
+
+  <rect id="channel-panel" x="1120" y="730" width="400" height="390" rx="20" fill="#FAFBFA" stroke="#DCE3DF" stroke-width="2"/>
+  <text id="channel-panel-title" x="1160" y="775" fill="#6F7885" font-size="18" font-weight="700">成片规格</text>
+  <rect id="channel-a-bottom" x="1180" y="820" width="280" height="92" rx="16" fill="#F1F8F5" stroke="#BBD9CD" stroke-width="2"/>
+  <circle id="channel-a-bottom-icon" cx="1225" cy="866" r="24" fill="#1F7A5C"/>
+  <text id="channel-a-bottom-code" x="1225" y="874" fill="#FFFFFF" font-size="18" font-weight="800" text-anchor="middle">A</text>
+  <text id="channel-a-bottom-title" x="1265" y="856" fill="#17202A" font-size="21" font-weight="800">横版成片</text>
+  <text id="channel-a-bottom-detail" x="1265" y="885" fill="#6F7885" font-size="18">长视频</text>
+  <rect id="channel-b-bottom" x="1180" y="968" width="280" height="92" rx="16" fill="#F5F8FC" stroke="#9FC3E6" stroke-width="2"/>
+  <circle id="channel-b-bottom-icon" cx="1225" cy="1014" r="24" fill="#3D8FD1"/>
+  <text id="channel-b-bottom-code" x="1225" y="1022" fill="#FFFFFF" font-size="18" font-weight="800" text-anchor="middle">B</text>
+  <text id="channel-b-bottom-title" x="1265" y="1004" fill="#17202A" font-size="21" font-weight="800">竖版成片</text>
+  <text id="channel-b-bottom-detail" x="1265" y="1033" fill="#6F7885" font-size="18">短视频</text>
+
+  <polyline id="edge-click-a-channel-a" points="830,760 920,760 920,842 1180,842" fill="none" stroke="#7D8782" stroke-width="2" marker-end="url(#arrow)"/>
+  <polyline id="edge-click-a-channel-b" points="830,788 950,788 950,990 1180,990" fill="none" stroke="#A2AAA6" stroke-width="2" marker-end="url(#arrow)"/>
+  <polyline id="edge-fixed-a-channel-a" points="830,916 980,916 980,870 1180,870" fill="none" stroke="#7D8782" stroke-width="2" marker-end="url(#arrow)"/>
+  <polyline id="edge-fixed-a-channel-b" points="830,944 1010,944 1010,1018 1180,1018" fill="none" stroke="#A2AAA6" stroke-width="2" marker-end="url(#arrow)"/>
+  <polyline id="edge-click-b-channel-a" points="830,1062 1040,1062 1040,898 1180,898" fill="none" stroke="#7D8782" stroke-width="2" marker-end="url(#arrow)"/>
+  <polyline id="edge-click-b-channel-b" points="830,1090 1070,1090 1070,1046 1180,1046" fill="none" stroke="#A2AAA6" stroke-width="2" marker-end="url(#arrow)"/>
+</svg>

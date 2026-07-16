@@ -1,0 +1,40 @@
+version: 1
+core:
+  requires:
+    - vision_input
+    - local_file_read
+    - local_file_write
+  produces:
+    - diagram_ir
+    - editable_svg
+
+destinations:
+  svg:
+    required_commands:
+      - python3
+    auth: none
+    fallback: null
+  feishu:
+    required_commands:
+      - node>=20
+      - npx
+      - python3
+      - lark-cli
+    optional_commands:
+      - whiteboard-cli
+    auth:
+      - feishu_user_oauth
+    configuration:
+      - HANDDRAWN_DIAGRAM_FEISHU_DOC
+    fallback: svg
+  figma:
+    required_capabilities:
+      - figma_write_connector_or_mcp_or_plugin_bridge
+    auth:
+      - figma_account_authorization
+    fallback: svg
+  powerpoint:
+    required_capabilities:
+      - editable_pptx_generation_runtime
+    auth: none
+    fallback: svg

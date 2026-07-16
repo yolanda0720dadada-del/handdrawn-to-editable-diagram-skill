@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/handdrawn-to-editable-diagram/diagram-ir.schema.json",
+  "title": "Diagram IR",
+  "type": "object",
+  "required": ["title", "generation_mode", "source_scope", "diagram_type", "reading_direction", "nodes", "groups", "edges", "uncertainties"],
+  "properties": {
+    "title": {"type": "string"},
+    "generation_mode": {"enum": ["faithful", "intent_enhanced"]},
+    "source_scope": {"enum": ["complete", "visible_only", "multi_image"]},
+    "communication_goal": {
+      "type": "object",
+      "properties": {
+        "central_idea": {"type": "string"},
+        "audience_takeaway": {"type": "string"},
+        "desired_action": {"type": "string"}
+      },
+      "additionalProperties": false
+    },
+    "diagram_type": {"type": "string"},
+    "reading_direction": {"enum": ["left-to-right", "top-to-bottom", "radial", "freeform"]},
+    "source_images": {"type": "array", "items": {"type": "string"}},
+    "nodes": {"type": "array", "items": {"$ref": "#/$defs/node"}},
+    "groups": {"type": "array", "items": {"$ref": "#/$defs/group"}},
+    "edges": {"type": "array", "items": {"$ref": "#/$defs/edge"}},
+    "annotations": {"type": "array"},
+    "semantic_additions": {"type": "array"},
+    "uncertainties": {"type": "array"},
+    "layout_hints": {"type": "object"}
+  },
+  "$defs": {
+    "node": {
+      "type": "object",
+      "required": ["id", "text", "observed", "source"],
+      "properties": {
+        "id": {"type": "string", "minLength": 1},
+        "kind": {"type": "string"},
+        "text": {"type": "string"},
+        "subtitle": {"type": "string"},
+        "group_id": {"type": ["string", "null"]},
+        "importance": {"enum": ["primary", "normal", "supporting"]},
+        "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+        "observed": {"type": "boolean"},
+        "source": {"enum": ["image", "user_intent", "inference"]}
+      }
+    },
+    "group": {
+      "type": "object",
+      "required": ["id", "label", "kind", "member_ids"],
+      "properties": {
+        "id": {"type": "string"},
+        "label": {"type": "string"},
+        "kind": {"type": "string"},
+        "parent_id": {"type": ["string", "null"]},
+        "member_ids": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "edge": {
+      "type": "object",
+      "required": ["id", "source", "target", "direction"],
+      "properties": {
+        "id": {"type": "string"},
+        "source": {"type": "string"},
+        "target": {"type": "string"},
+        "direction": {"enum": ["forward", "both", "none"]},
+        "label": {"type": "string"},
+        "kind": {"type": "string"},
+        "confidence": {"type": "number", "minimum": 0, "maximum": 1}
+      }
+    }
+  },
+  "additionalProperties": true
+}
