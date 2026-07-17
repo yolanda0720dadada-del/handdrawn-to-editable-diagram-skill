@@ -2,6 +2,8 @@
 
 Turn a photo or scan of a hand-drawn diagram into a clean, logically faithful, editable professional diagram.
 
+Unlike one-off image generation, the result is designed for follow-up editing: shapes, text, connectors, and visual elements can be adjusted after generation. Export targets include Feishu/Lark whiteboards, Figma/FigJam, PowerPoint, and offline editable SVG files that can be imported into most diagramming or design tools.
+
 The skill supports two modes:
 
 - **Faithful redraw** — reproduce the visible structure without inventing missing business logic.
