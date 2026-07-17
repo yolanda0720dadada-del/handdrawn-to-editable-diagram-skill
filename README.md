@@ -34,8 +34,6 @@ The skill never embeds personal document tokens or bypasses account authorizatio
 
 ## Reference example
 
-See [`examples/video-editing-workflow/`](examples/video-editing-workflow/) for a fully fictional, confidentiality-safe comparison between a hand-drawn video-editing workflow and the actual generated editable SVG output.
-
 <table>
   <tr>
     <th width="50%">Input: hand-drawn sketch</th>
