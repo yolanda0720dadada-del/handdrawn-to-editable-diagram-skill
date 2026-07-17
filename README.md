@@ -36,9 +36,22 @@ The skill never embeds personal document tokens or bypasses account authorizatio
 
 See [`examples/video-editing-workflow/`](examples/video-editing-workflow/) for a fully fictional, confidentiality-safe comparison between a hand-drawn video-editing workflow and the actual generated editable SVG output.
 
-| Input: hand-drawn sketch | Output: editable SVG (rendered preview) |
-|---|---|
-| ![Reference input](examples/video-editing-workflow/source-sketch.png) | [![Rendered preview of the SVG output](examples/video-editing-workflow/preview.png)](examples/video-editing-workflow/editable-diagram.svg) |
+<table>
+  <tr>
+    <th width="50%">Input: hand-drawn sketch</th>
+    <th width="50%">Output: editable SVG (rendered preview)</th>
+  </tr>
+  <tr>
+    <td width="50%" align="center">
+      <img src="examples/video-editing-workflow/source-sketch.png" alt="Reference input" width="100%">
+    </td>
+    <td width="50%" align="center">
+      <a href="examples/video-editing-workflow/editable-diagram.svg">
+        <img src="examples/video-editing-workflow/preview.png" alt="Rendered preview of the SVG output" width="100%">
+      </a>
+    </td>
+  </tr>
+</table>
 
 Click the Output preview to open the actual [`editable-diagram.svg`](examples/video-editing-workflow/editable-diagram.svg).
 
